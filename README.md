@@ -62,6 +62,44 @@ Data Validation       Data Transformation
  Supply Chain Analytics Dashboard
 ```
 
+📊 Project Screenshots
+
+---
+
+AWS S3 Data Lake Structure
+
+Amazon S3 is used as the central data lake with separate zones for raw, processed, curated, rejected, and Athena query-result data.
+
+![AWS S3 Data Lake Structure](docs/screenshots/s3-data-lake-structure.png)
+
+
+
+
+---
+
+
+
+Curated Analytics Table
+
+The final `order_analytics` table is registered in the AWS Glue Data Catalog and stored in Parquet format in the curated S3 layer.
+
+![Curated Order Analytics Table](docs/screenshots/glue-curated-order-analytics-table.png)
+
+AWS Glue Workflow Orchestration
+
+AWS Glue Workflow orchestrates crawlers, triggers, PySpark ETL processing, processed-data cataloging, and creation of the curated analytics layer.
+
+![AWS Glue Workflow](docs/screenshots/glue-workflow-orchestration.png)
+
+---
+
+
+### Power BI Supply Chain Analytics Dashboard
+
+This interactive Power BI dashboard provides visibility into revenue, orders, delivery performance, missing shipments, product categories, customer segments, warehouse performance, and order status.
+
+![Power BI Supply Chain Analytics Dashboard](docs/screenshots/powerbi-dashboard.png)
+
 ---
 
 Technology Stack
