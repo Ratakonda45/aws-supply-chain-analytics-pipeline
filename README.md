@@ -93,6 +93,12 @@ AWS Glue Workflow orchestrates crawlers, triggers, PySpark ETL processing, proce
 
 ---
 
+Amazon Athena Business Analysis
+
+Amazon Athena is used to query the curated Parquet dataset directly from Amazon S3. The analysis calculates order volume, revenue, and average delivery performance across product categories.
+
+![Amazon Athena Business Analysis](docs/screenshots/athena-business-analysis-query.png)
+
 
 ### Power BI Supply Chain Analytics Dashboard
 
