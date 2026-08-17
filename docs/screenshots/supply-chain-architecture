@@ -1,0 +1,36 @@
+Source CSV Files
+      ↓
+Amazon S3 - raw/
+      ↓
+EventBridge
+      ↓
+AWS Glue Workflow
+      ↓
+Raw Crawlers + Custom Classifiers
+      ↓
+AWS Glue Data Catalog
+      ↓
+PySpark ETL Job
+   ↙        ↘
+processed/  rejected/
+    ↓
+Processed Crawler
+    ↓
+Curated Glue Job
+    ↓
+curated/order_analytics/
+    ↓
+Curated Crawler
+    ↓
+Amazon Athena
+    ↓
+Power BI Dashboard
+
+Monitoring:
+Glue Job Failure
+      ↓
+EventBridge
+      ↓
+SNS
+      ↓
+Email Alert
